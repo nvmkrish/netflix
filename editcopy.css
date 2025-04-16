@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 1000px;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Blur Layer */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web_tall_panel/IN-en-20250407-TRIFECTA-perspective_8be2cd93-f2e6-4e34-acba-05b716385704_large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(16px);
+  opacity: 0.16;
+  z-index: 0;
+  
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
+#logo {
+  height: 82px;
+  width: 162px;
+  background-image: url("https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Center Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  background-color: #141414;
+  padding: 8px 24px;
+  border-radius: 6.25rem;
+  list-style: none;
+  height: 40px;
+  width: 20pxs;
+  position:relative;
+  top:50px;
+
+  
+  background:rgba(0, 0, 0, 0.7);
+  box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* Each Nav Link */
+.nav-links li a {
+  color: rgba(255, 255, 255, 0.5 );
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13.7px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.6s;
+  
+  height:100px;
+}
+
+.nav-links li a:hover {
+  color: white;
+  transition: color 0.6s;
+}
+
+/* Right Side Buttons (Language + Sign In) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sign-in-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+ 
+  transform: scale(1.05);
+}
+.bg2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.05;
+}
+
+.frontimg{
+  top:150px;
+  right: 38.9px;
+ 
+  height: 480px;
+  width: 1450.2px;
+  background-color: white;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web_tall_panel/IN-en-20250407-TRIFECTA-perspective_8be2cd93-f2e6-4e34-acba-05b716385704_large.jpg");
+  z-index: 2;
+  background-size: cover;
+  border-radius: 30px;
+  position: fixed;
+}
+.frontimg2{
+  background-color: black;  
+  height: 480px;
+  width: 1450.2px;
+  position: fixed;
+  top:150px;
+  right: 38.9px;
+  z-index: 3;
+  border-radius: 30px;
+  opacity: 0.8;
+}
